@@ -1,5 +1,5 @@
 #### 业务需求
-日历中需要展示日程任务，并且需要按照月、周、日视图查看。而antd提供的日组件只有年和月的视图切换，所以谷歌后选择了FullCalendar日历插件。这里展示最基本的react使用方法，官网（https://fullcalendar.io/）提供了完整的vue、react、angular教程。
+日历中需要展示日程任务，并且需要按照月、周、日视图查看。而antd提供的日组件只有年和月的视图切换，所以谷歌后选择了FullCalendar日历插件。这里展示最基本的react使用方法，官网 https://fullcalendar.io/ 提供了完整的vue、react、angular教程。
 
 #### 代码
 ```
