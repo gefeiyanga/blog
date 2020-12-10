@@ -12,5 +12,4 @@ let x = Infinity
 console.log(x == x + 1)
 
 console.log(0.3 - 0.2)
-
 console.log(0.2 - 0.1)
