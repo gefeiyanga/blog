@@ -7,6 +7,8 @@ https://www.nginx.cn/install
 nginx配置默认地址 /etc/nginx/nginx.conf
 修改配置后平滑重启 nginx -s reload
 以下代码基于不同端口配置多个项目
+
+#### nginx服务 重启：service nginx restart
 ```
 ...
     server {
