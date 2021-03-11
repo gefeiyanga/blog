@@ -73,8 +73,8 @@ let age;  // SyntaxError: Identifier 'age' has already been declared
 console.log(name);  // undefined
 var name = 'Petter';
 
-console.log(age);
-let age = 19;  // Uncaught ReferenceError: age is not defined
+console.log(age);  // Uncaught ReferenceError: age is not defined
+let age = 19;
 
 // 全局声明
 // 区别4: 与var不同，使用let在全局作用域中声明的变量不会成为window对象的属性，而var声明的变量会。（在浏览器中）
@@ -115,7 +115,7 @@ for (let i = 0; i < 5; i++) {
 
 
 // const 声明
-// const 的行为与let 基本相同，为一个重要区别是，用const声明变量时必须同时初始化变量
+// const 的行为与let 基本相同，唯一一个重要区别是，用const声明变量时必须同时初始化变量
 // 且尝试修改const声明的变量会导致运行时错误。
 const age = 20;
 age = 21;  // TypeError: Assignment to constant variable.
