@@ -1,5 +1,7 @@
 # nginx+umi 配置前端服务器
 
+#### 更新nginx安装在 usr/local 下的启动方式：https://blog.csdn.net/w1014074794/article/details/51881050
+
 #### nginx安装
 https://www.nginx.cn/install
 
