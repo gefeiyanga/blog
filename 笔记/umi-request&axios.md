@@ -158,7 +158,8 @@ request.interceptors.response.use(
 
 在umi框架中，需要在.umirc.ts文件中配置proxy，且只能是proxy。[参考](https://www.yuque.com/umijs/umi/proxy)
 
-当配置好proxy，能登录，但其他接口仍然无法携带cookie，可以查看接口中Cookie栏中过滤掉cookie的原因（记得钩上查看过滤掉的cookie），这里给个例子(我的项目比较特别，所以这么配置，如果直接代理反向api会导致cookie的path 和 request中的path不一致，请求无法携带cookie)
+当配置好proxy，能登录，但其他接口仍然无法携带cookie，可以查看接口中Cookie栏中过滤掉cookie的原因（记得钩上查看过滤掉的cookie），这里给个例子(我的项目比较特别，所以这么配置，如果直接代理反向api会导致cookie的path 和 request中的path不一致，请求无法携带cookie。图截的其他网站是domain不一致)
+![avatar](https://github.com/gefeiyanga/blog/blob/master/img/cookieFilterReason.jpg?raw=true)
 ```
   proxy: {
     '/local_analysis': { 
