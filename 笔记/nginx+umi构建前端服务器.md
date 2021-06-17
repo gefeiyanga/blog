@@ -46,6 +46,30 @@ nginx配置默认地址 /etc/nginx/nginx.conf
           autoindex on;
         }
     }
+
+    server {
+        listen      3000;
+        server_name  localhost;
+
+        #charset utf-8;
+
+        #access_log  logs/host.access.log  main;
+
+        location / {
+            root   html;
+            try_files $uri /index.html;
+            index  index.html index.htm;
+        }
+        location ^~/local_analysis {
+            #此为后台服务器地址
+            proxy_pass   http://127.0.0.1:8192/local_analysis/;
+        }
+
+        location ^~/data/upload{
+            #此为后台静态文件访问地址
+            proxy_pass   http://127.0.0.1:8192/local_analysis/data/upload/; 
+        }
+    }
 ...
 ```
 
