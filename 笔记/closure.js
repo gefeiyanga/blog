@@ -50,7 +50,7 @@ console.log(counter4.value());
 console.log(MakerCounterClass.value());
 
 const arr = new Array(3);
-for (let i = 0; i < arr.length; i++) {
+for (var i = 0; i < arr.length; i++) {
   setTimeout(() => {
     console.log(i);
   }, 0);
