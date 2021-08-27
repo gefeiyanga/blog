@@ -4,8 +4,8 @@ const path = require('path');
 var thunkify = require('thunkify');
 // var readFileThunk = thunkify(fs.readFile);
 
-// const classFile = path.resolve('《JavaScript高级程序设计》学习', './a.js');
-// const mapFile = path.resolve('《JavaScript高级程序设计》学习', './b.js');
+// const classFile = path.resolve('《ECMAScript 6 入门》', './a.js');
+// const mapFile = path.resolve('《ECMAScript 6 入门》学习', './b.js');
 
 // const gen = function* () {
 //   const f1 = yield readFile(classFile);
@@ -28,8 +28,8 @@ var thunkify = require('thunkify');
 // };
 // g.next();
 
-const fileA = path.resolve('《JavaScript高级程序设计》学习', './a.js');
-const fileB = path.resolve('《JavaScript高级程序设计》学习', './b.js');
+const fileA = path.resolve('《ECMAScript 6 入门》', './a.js');
+const fileB = path.resolve('《ECMAScript 6 入门》', './b.js');
 
 const thunkfiy = function (fn) {
   return function () {

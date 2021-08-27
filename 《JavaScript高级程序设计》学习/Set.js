@@ -1,3 +1,4 @@
+// @ts-nocheck
 // 数组去重
 const arr = [1, 2, 1, 3, 4, 5];
 const s = new Set();
