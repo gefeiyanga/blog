@@ -194,7 +194,7 @@ chmod 755 /etc/init.d/nginx
 chkconfig --add nginx (note that before add are two short horizontal lines-)
 ```
 5.service nginx status error reporting
-![avatar](https://raw.githubusercontent.com/gefeiyanga/Tips/master/nginxError.jpeg)
+![avatar](https://github.com/gefeiyanga/blog/blob/master/img/nginxError.jpeg?raw=true)
 
 Error: Failed to start SYSV: Nginx is an HTTP(S) server, HTTP(S) reverse
 
