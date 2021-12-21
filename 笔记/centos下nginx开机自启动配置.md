@@ -192,6 +192,10 @@ chmod 755 /etc/init.d/nginx
 ```
 ```
 chkconfig --add nginx (note that before add are two short horizontal lines-)
+
+chkconfig nginx on
+
+chkconfig --list
 ```
 5.service nginx status error reporting
 ![avatar](https://github.com/gefeiyanga/blog/blob/master/img/nginxError.jpeg?raw=true)
