@@ -11,6 +11,13 @@ nginx配置默认地址 /etc/nginx/nginx.conf
 以下代码基于不同端口配置多个项目
 
 #### nginx服务 重启：service nginx restart
+#### nginx重启报错：nginx: [error] open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file or directory)
+```
+// 使用nginx -c的参数指定nginx.conf文件的位置
+/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
+```
+
+#### 配置文件部分代码
 ```
 ...
     server {
