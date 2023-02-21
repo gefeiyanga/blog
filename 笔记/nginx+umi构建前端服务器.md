@@ -4,6 +4,7 @@
 
 #### nginx安装
 https://www.nginx.cn/install
+https://developer.aliyun.com/article/895221
 
 #### nginx配置
 nginx配置默认地址 /etc/nginx/nginx.conf
