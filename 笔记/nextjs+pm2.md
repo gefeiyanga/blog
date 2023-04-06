@@ -20,3 +20,8 @@
   };
   ```
 ##### 6. 启动pm2: pm2 start ecosystem.config.js
+
+##### PS. 使用命令行启动，使用cluster模式，并集中打印日志
+```
+pm2 start --name official-web dist/main.js -i max --merge-logs
+```
